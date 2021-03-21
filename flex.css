@@ -1,0 +1,52 @@
+/* FLEX CONTAINER (PARENT) */
+.flex-container {
+	background-color: black;
+	width: 100%;
+	padding: 16px 0px;
+
+	/* 1 - display: flex */
+	/* Experiment by removing this, then adding it back in */
+	display: flex;
+
+	/* 2 - flex-direction (row, column, row-reverse, column-reverse) */
+	/* If you do not specify flex-direction, it defaults to row */
+	flex-direction: row;
+
+	/* 3 - justify-content (center, flex-start, flex-end, space-between, space-evenly, space-around) */
+	justify-content: space-evenly;
+
+	/* 4 - align-items */
+	align-items: center;
+
+	/* 5 - flex-wrap */
+	flex-wrap: wrap;
+}
+
+/* FLEX ITEMS (CHILDREN) */
+.flex-item {
+	background-color: #fff;
+	border-radius: 8px;
+	color: #000;
+	padding: 18px;
+	margin: 8px;
+	text-align: center;
+	width: 500px;
+	height: 200px;
+
+	/* Shorthand for flex grow/shrink/basis */
+	/* flex: 1 0 200px;  */
+}
+
+/* FLEX SHRINK/GROW - affects how items respond to browser resizing */
+.item-1 {
+	flex-shrink: 0; /* Stops item from shrinking when you resize browser */
+	flex-basis: 500px; /* Will always be 500px */
+}
+
+.item-2 {
+	flex-grow: 1; /* Hogs up all available space from its siblings */
+}
+
+.item-3 {
+	flex: 2; /* Hogs up all available space at 2x the rate of other flex-grow siblings (note shorthand) */
+}

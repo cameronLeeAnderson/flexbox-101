@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="stylesheet" href="style.css" />
+		<title>Flexbox 101</title>
+	</head>
+	<body>
+		<div class="container">
+			<!-- INTRO -->
+
+			<div class="main">
+				<h1 class="title">What is this Flexbox thing all about?</h1>
+				<ul id="flexbox-list">
+					<!-- PRACTICE YOUR JAVASCRIPT! Inject dynamic list here! (SEE script.js)-->
+				</ul>
+
+				<hr />
+				<br />
+				<a class="btn" href="./playground.html" target="_blank"> Click here to go to the playground! </a>
+			</div>
+
+			<!-- TABLE OF ALIGNMENT PROPERTIES -->
+
+			<div class="main">
+				<h1 class="title">Alignment Properties</h1>
+
+				<table>
+					<!-- Header -->
+					<tr>
+						<td scope="col">Property</td>
+						<td scope="col">Values</td>
+						<td scope="col">Description</td>
+					</tr>
+					<tbody>
+						<!-- justify-content -->
+						<tr>
+							<td><code>justify-content</code></td>
+							<td>
+								<ul>
+									<li><code>center</code></li>
+									<li><code>flex-start</code></li>
+									<li><code>flex-end</code></li>
+								</ul>
+							</td>
+							<td>Alignment along main-axis</td>
+						</tr>
+
+						<!-- align-items -->
+						<tr>
+							<td><code>align-items</code></td>
+							<td>
+								<ul>
+									<li><code>center</code></li>
+									<li><code>flex-start</code></li>
+									<li><code>flex-end</code></li>
+								</ul>
+							</td>
+							<td>Alignment along cross-axis</td>
+						</tr>
+
+						<!-- align-content -->
+						<tr>
+							<td><code>align-content</code></td>
+							<td>
+								<ul>
+									<li><code>center</code></li>
+									<li><code>flex-start</code></li>
+									<li><code>flex-end</code></li>
+								</ul>
+							</td>
+							<td>Alignment when there is extra space in cross axies<br />(e.g., when items wrap)</td>
+						</tr>
+					</tbody>
+				</table>
+			</div>
+		</div>
+		<script src="script.js"></script>
+	</body>
+</html>

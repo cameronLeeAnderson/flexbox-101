@@ -1,0 +1,101 @@
+@import url("https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Lato");
+
+:root {
+	--bg-color: #2d3436;
+	--font-color: #dfe6e9;
+	--font-color-secondary: #b2bec3;
+	--strong-color: #fd79a8;
+	--border-color: #636e72;
+}
+
+* {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+
+html {
+	background-color: var(--bg-color);
+}
+
+body {
+	font-family: "Lato", sans-serif;
+	color: var(--font-color);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	font-family: "Abril Fatface", cursive;
+}
+
+strong,
+code {
+	color: var(--strong-color);
+}
+
+a,
+a:visited {
+	text-decoration: none;
+	color: var(--font-color-secondary);
+}
+
+.btn,
+a.btn {
+	padding: 8px 30px;
+	background-color: var(--strong-color);
+	color: #fff;
+	font-size: 30px;
+	border-radius: 8px;
+}
+
+li {
+	list-style: none;
+	font-size: 24px;
+	margin: 8px 0;
+}
+
+table {
+	width: 100%;
+	font-size: 20px;
+}
+
+table,
+th,
+td {
+	border: 1px solid var(--border-color);
+	border-collapse: collapse;
+}
+
+th,
+td {
+	padding: 16px;
+}
+
+table code {
+	font-size: 24px;
+}
+
+.title {
+	margin-bottom: 16px;
+}
+
+.container {
+	height: 100vh;
+	display: flex;
+	flex-direction: column;
+	justify-content: normal;
+	align-items: flex-start;
+	margin: 8px 24px;
+	padding: 16px 36px;
+}
+
+.main {
+	width: 100%;
+	border: 3px solid var(--border-color);
+	padding: 24px 40px;
+	margin-bottom: 24px;
+}
